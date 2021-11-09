@@ -4,7 +4,7 @@ import os
 # postgres_local_base = os.environ['DATABASE_URL']
 #DATABASE_URL='postgresql://postgres:rajesh@localhost:5432/pybrondb'  #rajes_pop
 
-DATABASE_URL ='postgres://aulqpyoaggbvds:b9e29b510c953ef25ca6a0f70dbfe6094d2ecc03cb3e710f4e05b8f21c4be07c@ec2-3-229-127-203.compute-1.amazonaws.com:5432/d2kf3691bagdtn'
+DATABASE_URL ='postgresql://aulqpyoaggbvds:b9e29b510c953ef25ca6a0f70dbfe6094d2ecc03cb3e710f4e05b8f21c4be07c@ec2-3-229-127-203.compute-1.amazonaws.com:5432/d2kf3691bagdtn'
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
