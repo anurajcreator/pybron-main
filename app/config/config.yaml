@@ -1,0 +1,33 @@
+artifacts:
+  ARTIFACTS_DIR: artifacts
+  TRAINED_MODEL_DIR: model
+  BASE_MODEL_DIR: base_model
+  BASE_MODEL_NAME: classifier_model.h5
+  UPDATED_BASE_MODEL_NAME: updated_VGG16_base_model.h5
+  CHECKPOINT_DIR: checkpoints
+  BASE_LOG_DIR: base_model_dir
+  TENSORBOARD_ROOT_LOG_DIR: tensorboard_log_dir
+  CALLBACKS_DIR: callbacks
+
+source_download_dirs:
+  - ../outside_data/winequality_red.csv
+
+local_data_dirs:
+  - app/data
+file_name:
+  - winequality_red.csv
+
+estimators:
+  DecisionTreeClassifier:
+    params:
+      max_depth: 13
+      criterion: entropy
+      ccp_alpha: 0.02479919088621574
+      min_samples_leaf: 1
+      min_samples_split: 7
+      splitter: random
+
+saved_model_dir:
+  - app/model
+
+
